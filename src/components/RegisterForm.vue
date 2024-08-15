@@ -103,7 +103,7 @@
 
 <script>
 import { ErrorMessage } from 'vee-validate'
-import firebase from '@/includes/firebase.js'
+import { auth } from '@/includes/firebase.js'
 
 export default {
   name: 'RegisterForm',
@@ -138,9 +138,7 @@ export default {
       let userCred = null
 
       try {
-        userCred = await firebase
-          .auth()
-          .createUserWithEmailAndPassword(values.email, values.password)
+        userCred = await auth.createUserWithEmailAndPassword(values.email, values.password)
       } catch (error) {
         this.reg_in_submission = false
         this.reg_alert_variant = 'bg-red-500'
