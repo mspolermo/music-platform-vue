@@ -135,4 +135,20 @@
     </div>
   </section>
 </template>
-<script setup></script>
+
+<script>
+// import useUserStore from '@/stores/user.js'
+export default {
+  name: 'manage'
+  // beforeRouteEnter(to, from, next) {
+  //   const store = useUserStore()
+  //   if (store.userLoggedIn) {
+  //     next()
+  //   } else {
+  //     next({
+  //       name: 'home'
+  //     })
+  //   }
+  // } локальный гуард компонента, закоменчен тк уже подключен глобальный
+}
+</script>
