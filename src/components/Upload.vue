@@ -64,8 +64,8 @@ export default {
         if (file.type !== 'audio/mpeg') {
           return
         }
-        const storageRef = storage.ref() //music-8f3c5.appspot.com
-        const songsRef = storageRef.child(`songs/${file.name}`) //music-8f3c5.appspot.com/songs/example.mp3
+        const storageRef = storage.ref() //storageBucket
+        const songsRef = storageRef.child(`songs/${file.name}`) //storageBucket/songs/example.mp3
         songsRef.put(file)
         console.log('putted')
       })
