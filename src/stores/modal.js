@@ -10,5 +10,3 @@ export default defineStore('modal', {
     }
   }
 })
-
-//test commiting
