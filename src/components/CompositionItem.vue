@@ -25,23 +25,23 @@
       </div>
       <vee-form :validation-schema="schema" :initial-values="song" @submit="edit">
         <div class="mb-3">
-          <label class="inline-block mb-2">Song Title</label>
+          <label class="inline-block mb-2">{{ $t('manage.title') }}</label>
           <vee-field
             type="text"
             name="modified_name"
             class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
-            placeholder="Enter Song Title"
+            :placeholder="$t('manage.title_placeholder')"
             @input="updateUnsavedFlag(true)"
           />
           <ErrorMessage class="text-red-600" name="modified_name" />
         </div>
         <div class="mb-3">
-          <label class="inline-block mb-2">Genre</label>
+          <label class="inline-block mb-2">{{ $t('manage.genre') }}</label>
           <vee-field
             type="text"
             name="genre"
             class="block w-full py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded"
-            placeholder="Enter Genre"
+            :placeholder="$t('manage.genre_placeholder')"
             @input="updateUnsavedFlag(true)"
           />
           <ErrorMessage class="text-red-600" name="genre" />
@@ -51,7 +51,7 @@
           class="py-1.5 px-3 rounded text-white bg-green-600"
           :disabled="in_submission"
         >
-          Submit
+          {{ $t('manage.submit') }}
         </button>
         <button
           type="button"
@@ -59,7 +59,7 @@
           :disabled="in_submission"
           @click.prevent="showForm = false"
         >
-          Go Back
+          {{ $t('manage.back') }}
         </button>
       </vee-form>
     </div>
@@ -104,7 +104,7 @@ export default {
       in_submission: false,
       show_alert: false,
       alert_variant: 'bg-blue-500',
-      alert_message: 'Please wait! Updating song info.'
+      alert_message: this.$t('manage.updating_msg')
     }
   },
   methods: {
@@ -112,14 +112,14 @@ export default {
       this.in_submission = true
       this.show_alert = true
       this.alert_variant = 'bg-blue-500'
-      this.alert_message = 'Please wait! Updating song info.'
+      this.alert_message = this.$t('manage.updating_msg')
 
       try {
         await songsCollection.doc(this.song.docID).update(values)
       } catch (error) {
         this.in_submission = false
         this.alert_variant = 'bg-red-500'
-        this.alert_message = 'Something went wrong! Try again later'
+        this.alert_message = this.$t('manage.updating_error')
         return
       }
 
@@ -128,7 +128,7 @@ export default {
 
       this.in_submission = false
       this.alert_variant = 'bg-green-500'
-      this.alert_message = 'Success!'
+      this.alert_message = this.$t('manage.updating_success')
     },
     async deleteSong() {
       const storageRef = storage.ref()

@@ -8,5 +8,19 @@
   "register": {
     "accept": "I accept Music's {0}",
     "tos": "Terms of Service"
+  },
+  "manage": {
+    "my_songs": "My songs",
+    "upload": "Upload",
+    "drop": "Drop your files here",
+    "title": "Song title",
+    "title_placeholder": "Enter song title",
+    "genre": "Genre",
+    "genre_placeholder": "Enter genre",
+    "submit": "Submit",
+    "back": "Go back",
+    "updating_msg": "Please wait! Updating song info.",
+    "updating_error": "Something went wrong! Try again later",
+    "updating_success": "Success!"
   }
 }
