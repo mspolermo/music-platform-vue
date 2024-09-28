@@ -1,6 +1,15 @@
 {
+  "header": {
+    "music": "Music",
+    "about": "About",
+    "manage": "Manage",
+    "login": "Login / Register",
+    "logout": "LogOut"
+  },
   "home": {
-    "listen": "Listen to Great Music!"
+    "listen": "Listen to Great Music!",
+    "text": "Welcome to the world of music, where every track comes alive, filling the air with rhythms and melodies. Dive into the atmosphere and enjoy every sound, whether it's the latest hits or timeless classics. Music here is a journey that begins with a single click.",
+    "songs": "Songs"
   },
   "song": {
     "comment_count": "No comments | 1 comment | {count} comments"
@@ -22,5 +31,35 @@
     "updating_msg": "Please wait! Updating song info.",
     "updating_error": "Something went wrong! Try again later",
     "updating_success": "Success!"
+  },
+  "about": {
+    "heading": "This is an about page"
+  },
+  "login": {
+    "head": "Your account",
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "email_placeholder": "Enter email",
+    "password": "Password",
+    "password_placeholder": "Password",
+    "submit": "Submit"
+  },
+  "reg": {
+    "name": "Name",
+    "name_placeholder": "Enter name",
+    "email": "Email",
+    "email_placeholder": "Enter email",
+    "age": "Age",
+    "password": "Password",
+    "password_placeholder": "Password",
+    "password_confirm": "Confirm password",
+    "password_confirm_placeholder": "Confirm password",
+    "country": "Country",
+    "usa": "USA",
+    "mexico": "Mexico",
+    "germany": "Germany",
+    "russia": "Russia",
+    "submit": "Submit"
   }
 }
