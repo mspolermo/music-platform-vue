@@ -12,7 +12,11 @@
     "songs": "Songs"
   },
   "song": {
-    "comment_count": "No comments | 1 comment | {count} comments"
+    "comment_count": "No comments | 1 comment | {count} comments",
+    "comment_placeholder": "Your comment here...",
+    "submit": "Submit",
+    "latest": "Latest",
+    "oldest": "Oldest"
   },
   "register": {
     "accept": "I accept Music's {0}",
@@ -43,7 +47,10 @@
     "email_placeholder": "Enter email",
     "password": "Password",
     "password_placeholder": "Password",
-    "submit": "Submit"
+    "submit": "Submit",
+    "alert": "Please wait! We are logging you in.",
+    "error": "Invalid login details.",
+    "success": "Success! You are now logged in."
   },
   "reg": {
     "name": "Name",
@@ -60,6 +67,9 @@
     "mexico": "Mexico",
     "germany": "Germany",
     "russia": "Russia",
-    "submit": "Submit"
+    "submit": "Submit",
+    "alert": "Please wait! Your account is being created.",
+    "error": "An unexpected error occurred. Please try again later.",
+    "success": "Success! Your account has been created."
   }
 }
