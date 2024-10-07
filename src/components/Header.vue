@@ -10,7 +10,6 @@
       >
         {{ $t('header.music') }}
       </router-link>
-
       <div class="flex flex-grow items-center">
         <!-- Primary Navigation -->
         <ul class="flex flex-row mt-1">

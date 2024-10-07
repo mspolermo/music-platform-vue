@@ -52,7 +52,6 @@
               >
             </li>
           </ul>
-
           <!-- Login Form -->
           <app-login-form v-if="tab === 'login'" />
           <!-- Registration Form -->
