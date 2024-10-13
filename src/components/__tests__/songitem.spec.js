@@ -21,5 +21,24 @@ describe('SongItem.vue', () => {
     const compositionAuthor = wrapper.find('.text-gray-500')
 
     expect(compositionAuthor.text()).toBe(song.display_name)
-  })
+  }),
+    test('resnder song.docID in id attribute', () => {
+      const song = {
+        docID: 'abc'
+      }
+
+      const wrapper = shallowMount(SongItem, {
+        propsData: {
+          song
+        },
+        global: {
+          components: {
+            'router-link': RouterLinkStub
+          }
+        }
+      })
+
+      //expect(wrapper.attributes().id).toBe(`song-id-${song.docID}`) // for :id
+      expect(wrapper.classes()).toContain(`song-id-${song.docID}`) // via special classes
+    })
 })
