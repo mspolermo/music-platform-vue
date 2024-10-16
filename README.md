@@ -1,57 +1,84 @@
-# .
+# 🎵 Music Platform на Vue
 
-This template should help get you started developing with Vue 3 in Vite.
+![Vue.js](https://img.shields.io/badge/Vue-3.0.0-green) ![Vite](https://img.shields.io/badge/Vite-2.0.0-blue) ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.0.0-blueviolet)
 
-## Recommended IDE Setup
+## 📖 О проекте
+**Music Platform** — это веб-приложение для прослушивания музыки, разработанное с использованием **Vue 3**, **Vite** и **Firebird**. Проект предоставляет пользователям удобный интерфейс для управления музыкальными треками, создания плейлистов и прослушивания музыки.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Customize configuration
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+  <a href="./public/assets/screenshots/Home.png" target="_blank">
+    <img src="./public/assets/screenshots/Home.png" alt="Главная страница" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/assets/screenshots/Register.png" target="_blank">
+    <img src="./public/assets/screenshots/Register.png" alt="Регистрация" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/assets/screenshots/Manage.png" target="_blank">
+    <img src="./public/assets/screenshots/Manage.png" alt="Страница управления композициями" style="width: 240px; border-radius: 8px;" />
+  </a>
+  <a href="./public/assets/screenshots/Song.png" target="_blank">
+    <img src="./public/assets/screenshots/Song.png" alt="Страница композиции" style="width: 240px; border-radius: 8px;" />
+  </a>
+</div>
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+[//]: # ()
+[//]: # (![Главная страница]&#40;./public/assets/screenshots/Home.png&#41;)
+[//]: # (![Регистрация]&#40;./public/assets/screenshots/Register.png&#41;)
+[//]: # (![Страница управления композициями]&#40;./public/assets/screenshots/Manage.png&#41;)
+[//]: # (![Страница композиции]&#40;./public/assets/screenshots/Song.png&#41;)
 
-## Project Setup
+## 🛠️ Используемые технологии
+- **[Vue 3](https://vuejs.org/)** — современный фреймворк для создания пользовательских интерфейсов.
+- **[Vite](https://vitejs.dev/)** — инструмент для быстрой сборки и разработки.
+- **[Tailwind CSS](https://tailwindcss.com/)** — утилитарный CSS-фреймворк для создания адаптивного дизайна.
+- **[Cypress](https://www.cypress.io/)** и **[Vitest](https://vitest.dev/)** — для End-to-End и Unit тестирования.
+- **[Firebird](https://firebirdsql.org/)** — СУБД, используемая для хранения данных пользователей и музыкальных треков, обеспечивающая надежное и эффективное управление данными.
 
-```sh
+## 🚀 Начало работы
+
+### 📦 Установка
+Для запуска проекта локально выполните следующие шаги:
+
+1. Клонируйте репозиторий:
+   ```
+   git clone https://github.com/mspolermo/music-platform-vue.git
+   cd music-platform-vue
+   ```
+2. Установите зависимости:
+```
 npm install
 ```
-
-### Compile and Hot-Reload for Development
-
-```sh
+### 🧑‍💻 Запуск
+Для запуска проекта в режиме разработки используйте команду:
+```
 npm run dev
 ```
-
-### Compile and Minify for Production
-
-```sh
+Для сборки проекта в режиме продакшн:
+```
 npm run build
 ```
+Собранные файлы будут находиться в папке dist.
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### 🧪 Тестирование
+Проект поддерживает юнит-тесты и тесты End-to-End.
 
-```sh
+Запуск юнит-тестов с использованием Vitest:
+```
 npm run test:unit
 ```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
+Запуск End-to-End тестов с Cypress в dev-среде:
+```
 npm run test:e2e:dev
 ```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
+### 🧹 Линтинг
+Для запуска линтера используйте команду:
 ```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
 npm run lint
+```
+### 🌐 Деплой
+Демонстрационный проект [опубликован](https://music-platform-a8axons85-mspolermos-projects.vercel.app) с помощью Vercel.
+Авторизационные данные тестового пользователя:
+```
+login: test@test.com
+password: 123456789
 ```
